@@ -1,6 +1,6 @@
 # Lukshan Sadeepa
 
-Data Science Undergraduate at SLIIT
+Data Science Undergraduate at SLIIT (2023 -precent)
 
 ## About Me
 
