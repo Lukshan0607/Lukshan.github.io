@@ -57,10 +57,24 @@ function Hero() {
               <strong>Phone:</strong> +94 77 920 8485
             </p>
             <p>
-              <strong>LinkedIn:</strong> lukshan-karunarathna
+              <strong>LinkedIn:</strong>{" "}
+              <a
+                href="https://www.linkedin.com/posts/lukshan-karunarathna-219b58320_datascience-statisticalmodeling-employeeengagement-ugcPost-7455539518390259713-zvbX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFFUEDUB5UZTuKrIdEtH2h--dEoFm9-gYzM"
+                target="_blank"
+                rel="noreferrer"
+              >
+                linkedin.com/in/lukshan-karunarathna
+              </a>
             </p>
             <p>
-              <strong>GitHub:</strong> Lukshan0607
+              <strong>GitHub:</strong>{" "}
+              <a
+                href="https://github.com/Lukshan0607"
+                target="_blank"
+                rel="noreferrer"
+              >
+                github.com/Lukshan0607
+              </a>
             </p>
           </div>
         </div>

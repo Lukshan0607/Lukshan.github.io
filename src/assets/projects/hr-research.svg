@@ -1,0 +1,11 @@
+<svg width="520" height="320" viewBox="0 0 520 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="520" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22c55e" />
+      <stop offset="1" stop-color="#14b8a6" />
+    </linearGradient>
+  </defs>
+  <rect width="520" height="320" rx="32" fill="url(#grad)" />
+  <text x="50%" y="40%" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" fill="#ffffff" font-weight="800">HR</text>
+  <text x="50%" y="62%" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" fill="rgba(255,255,255,0.9)">Research</text>
+</svg>
