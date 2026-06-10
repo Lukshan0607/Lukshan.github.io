@@ -1,28 +1,75 @@
 import {
-  SiPython,
-  SiMysql,
+  SiHtml5,
+  SiCss,
+  SiJavascript,
   SiReact,
-  SiTensorflow,
-  SiDatabricks,
+  SiTailwindcss,
+  SiBootstrap,
+  SiNodedotjs,
   SiOpenjdk,
+  SiSpringboot,
   SiMongodb,
   SiGit,
-  SiAirtable,
-  SiJavascript,
+  SiGithub,
+  SiAndroidstudio,
+  SiPostman,
+  SiFigma,
+  SiPython,
+  SiPandas,
+  SiNumpy,
+  SiScikitlearn,
+  SiTensorflow,
+  SiJupyter,
+  SiDatabricks,
+  SiDatacamp,
+  SiDataiku,
 } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 function Skills() {
-  const skills = [
-    { name: "Python", level: 90, icon: SiPython },
-    { name: "SQL", level: 85, icon: SiMysql },
-    { name: "React", level: 80, icon: SiReact },
-    { name: "JavaScript", level: 85, icon: SiJavascript },
-    { name: "Machine Learning", level: 85, icon: SiTensorflow },
-    { name: "Power BI", level: 75, icon: SiDatabricks },
-    { name: "Java", level: 70, icon: SiOpenjdk },
-    { name: "MongoDB", level: 65, icon: SiMongodb },
-    { name: "Git", level: 80, icon: SiGit },
-    { name: "Tableau", level: 75, icon: SiAirtable },
+  const skillGroups = [
+    {
+      title: "Frontend Development",
+      skills: [
+        { name: "HTML", icon: SiHtml5 },
+        { name: "CSS", icon: SiCss },
+        { name: "JavaScript", icon: SiJavascript },
+        { name: "React", icon: SiReact },
+        { name: "Tailwind CSS", icon: SiTailwindcss },
+        { name: "Bootstrap", icon: SiBootstrap },
+      ],
+    },
+    {
+      title: "Data Science & ML",
+      skills: [
+        { name: "Python", icon: SiPython },
+        { name: "Pandas", icon: SiPandas },
+        { name: "NumPy", icon: SiNumpy },
+        { name: "Scikit-learn", icon: SiScikitlearn },
+        { name: "TensorFlow", icon: SiTensorflow },
+        { name: "Jupyter", icon: SiJupyter },
+      ],
+    },
+    {
+      title: "Data Visualization",
+      skills: [
+        { name: "Power BI", icon: SiDatabricks },
+        { name: "Tableau", icon: SiDatacamp },
+        { name: "Matplotlib", icon: SiDataiku },
+        { name: "Seaborn", icon: SiDatabricks },
+      ],
+    },
+    {
+      title: "Tools & IDEs",
+      skills: [
+        { name: "Git", icon: SiGit },
+        { name: "GitHub", icon: SiGithub },
+        { name: "VS Code", icon: VscVscode },
+        { name: "Android Studio", icon: SiAndroidstudio },
+        { name: "Postman", icon: SiPostman },
+        { name: "Figma", icon: SiFigma },
+      ],
+    },
   ];
 
   return (
@@ -32,24 +79,23 @@ function Skills() {
         <h2>Skills & Tools</h2>
       </div>
 
-      <div className="skills-grid">
-        {skills.map((skill) => {
-          const Icon = skill.icon;
-          return (
-            <div className="skill-card" key={skill.name}>
-              <div className="skill-title">
-                <div className="skill-meta">
-                  <Icon className="skill-icon" />
-                  <span>{skill.name}</span>
-                </div>
-                <span>{skill.level}%</span>
-              </div>
-              <div className="skill-bar">
-                <div className="skill-fill" style={{ width: `${skill.level}%` }} />
-              </div>
+      <div className="skill-groups">
+        {skillGroups.map((group) => (
+          <div className="skill-group" key={group.title}>
+            <h3>{group.title}</h3>
+            <div className="skill-cards-grid">
+              {group.skills.map((skill) => {
+                const Icon = skill.icon;
+                return (
+                  <div className="skill-card" key={skill.name}>
+                    <Icon className="skill-icon" />
+                    <span className="skill-label">{skill.name}</span>
+                  </div>
+                );
+              })}
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     </section>
   );
