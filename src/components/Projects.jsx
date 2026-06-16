@@ -91,7 +91,7 @@ function Projects() {
       stack: ["MongoDB", "Express", "React", "Node.js"],
       description:
         "Created a MERN stack recycling platform for inventory, collection, and recycling workflows.",
-      github: "https://github.com/Shalitha-Lakshan/ECO-CYCLE",
+      github: "https://github.com/Lukshan0607/ECO-CYCLE",
       image: ecoImg
     },
     {
