@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaFileExcel, FaDatabase, FaMicrosoft, FaChartBar } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileExcel, FaDatabase, FaMicrosoft, FaChartBar } from "react-icons/fa";
 import {
   SiMongodb,
   SiExpress,
@@ -68,12 +68,32 @@ function Projects() {
       image: BAImg
     },
     {
+      title: "Olist E-Commerce Sales Analysis",
+      tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Power BI", "SQL"],
+      stack: ["Python", "Power BI"],
+      description:
+        "Analyzed Brazilian Olist e-commerce data, built ETL workflows, and developed dashboards that highlight sales performance, customer behavior, and operational trends.",
+      github: "https://github.com/Lukshan0607/olist-analyst-project",
+      image: BAImg
+    },
+    {
+      title: "Airbnb Data Analysis",
+      tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Power BI"],
+      stack: ["Python", "Power BI"],
+      description:
+        "Explored Airbnb market data with preprocessing, feature engineering, and visual reports to uncover pricing, availability, and review insights.",
+      github: "https://github.com/Lukshan0607/airbnb-analysis",
+      linkedin: "https://www.linkedin.com/posts/lukshan-karunarathna-219b58320_datascience-machinelearning-python-ugcPost-7480214120391155712-thQ0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFFUEDUB5UZTuKrIdEtH2h--dEoFm9-gYzM",
+      image: BAImg
+    },
+    {
       title: "HR Analytical Research Project",
       tags: ["R", "Statistics", "Employee Trust"],
       stack: ["R"],
       description:
         "Analyzed employee trust and engagement data, producing statistical insights for transparent HR decision-making.",
       github: "https://github.com/Lukshan0607/employee-trust-statistical-analysis-y3-s1",
+      linkedin: "https://www.linkedin.com/posts/lukshan-karunarathna-219b58320_datascience-statisticalmodeling-employeeengagement-ugcPost-7455539518390259713-zvbX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFFUEDUB5UZTuKrIdEtH2h--dEoFm9-gYzM",
       image: hrImg
     },
     {
@@ -92,6 +112,7 @@ function Projects() {
       description:
         "Created a MERN stack recycling platform for inventory, collection, and recycling workflows.",
       github: "https://github.com/Lukshan0607/ECO-CYCLE",
+      linkedin: "https://www.linkedin.com/posts/lukshan-karunarathna-219b58320_mernstack-mongodb-reactjs-ugcPost-7473270350236196864-K6BS/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFFUEDUB5UZTuKrIdEtH2h--dEoFm9-gYzM",
       image: ecoImg
     },
     {
@@ -205,6 +226,17 @@ function Projects() {
                 >
                   <FaGithub />
                   GitHub
+                </a>
+              )}
+              {project.linkedin && (
+                <a
+                  href={project.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-link linkedin-link"
+                >
+                  <FaLinkedin />
+                  LinkedIn
                 </a>
               )}
               {project.demo && (

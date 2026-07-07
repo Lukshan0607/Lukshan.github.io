@@ -751,6 +751,12 @@ a {
   box-shadow: 0 10px 30px rgba(56, 189, 248, 0.16);
 }
 
+.project-link.linkedin-link:hover {
+  background: rgba(10, 102, 194, 0.18);
+  color: #0ea5e9;
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.16);
+}
+
 .project-link svg {
   margin-right: 10px;
   font-size: 1rem;
